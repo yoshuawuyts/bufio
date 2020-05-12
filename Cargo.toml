@@ -1,0 +1,11 @@
+[package]
+name = "bufio"
+version = "0.1.0"
+authors = ["Yoshua Wuyts <yoshuawuyts@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = "1.5.0"
+ringbahn = { git = "https://github.com/withoutboats/ringbahn" }
