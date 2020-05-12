@@ -57,3 +57,8 @@ impl async_std::io::BufRead for File {
         todo!();
     }
 }
+
+pub trait BufWrite {
+    fn poll_write_buf(self: Pin<&mut Self>, cx: &mut Context, buf: Vec<u8>)
+        -> Poll<io::Result<()>>;
+}
